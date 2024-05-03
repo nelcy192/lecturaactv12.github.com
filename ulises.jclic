@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ulises" version="0.1.3">
+ <settings>
+  <title>ulises</title>
+  <revision description="created" date="5/3/24" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="actividad 1" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="actividad 1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color foreground="0x0000FF" background="0xFF9999" />
+     </style>
+     <p>Lee la historia "Aventuras de Ulises" y realiza la actividad une con flechas.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color foreground="0x999999" background="0xCCCCFF" />
+     </style>
+     <p>Felicidades terminaste la actividad.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="uli.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" image="ciclo.png">
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Ulises reto al cíclope a que bebiera un poco de...</p>
+    </cell>
+    <cell id="2" image="esc.png">
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="200.0" cellHeight="100.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cíclope</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Vino griego</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Times New Roman" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Forma en que escaparon de la cueva del cíclope.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ciclo.png" file="ciclo.png" />
+  <media name="esc.png" file="esc.png" />
+  <media name="uli.png" file="uli.png" />
+ </mediaBag>
+</JClicProject>
+
